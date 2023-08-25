@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#0B172D">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHISRAV</title>
+    <title>Khisrav - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Slab:wght@100;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
@@ -11,47 +12,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-    <nav class="nav">
-        <a href="#" class="logo">LOGO</a>
-
-        <ul class="menu">
-            <li class="item active">
-                <a href="#">Home</a>
-            </li>
-            <li class="item">
-                <a href="#">Projects</a>
-            </li>
-            <li class="item">
-                <a href="#">About</a>
-            </li>
-            <li class="item">
-                <a href="#">Achievements</a>
-            </li>
-            <li class="item">
-                <select>
-                    <option value="en">EN</option>
-                    <option value="ru">RU</option>
-                </select>
-            </li>
-            <li class="item">
-                <a href="#" class="btn btn-white">GitHub</a>
-            </li>
-        </ul>
-
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<!-- Header Section -->
+<header class="header" id="header">
+    <nav class="navbar container">
+       <a href="#" class="brand">Brand</a>
+       <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+       </div>
+       <div class="menu" id="menu">
+          <ul class="menu-inner">
+             <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+             <li class="menu-item"><a href="#" class="menu-link">Feature</a></li>
+             <li class="menu-item"><a href="#" class="menu-link">Product</a></li>
+             <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+          </ul>
+       </div>
+       <a href="#" class="menu-block btn btn-outline">Discover</a>
     </nav>
-</header>
+ </header>
 <main>
     <section class="hero">
         <div class="big-text pb-5">
-            <div class="pt-5 mt-5"><span class="co">CO</span><span class="de">DE</span></div><div><span class="crafter">CRAFTER</span></div>
-            <div class="hero-img" id="hero-img">
-                <div class="smoother"></div>
+            <div class="pt-5 mt-5">
+                <span class="co">CO</span>
+                <span class="de">DE</span>
+            </div>
+            <div>
+                <span class="crafter">CRAFTER</span>
+            </div>
+            <div class="desktop">
+                <div class="hero-img" id="hero-img">
+                    <div class="smoother"></div>
+                </div>
+            </div>
+            <div class="mobile">
+                <a href="" class="btn btn-violet mt-5 mb-3" style="font-family: 'Montserrat', sans-serif;padding:16px 32px;">Contact Me</a>
+                <div class="hero-img__mobile">
+                    <img src="hero-avatar.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -168,6 +168,7 @@
                     <p class="footer-title" style="text-align: right;">Copyright 2023 ©</p>
                 </div>
             </div>
+            <p class="text-center" style="font-family: 'Montserrat', monospace;color:#fff;">This is beta version of website!</p>
         </div>
     </footer>
 </main>
